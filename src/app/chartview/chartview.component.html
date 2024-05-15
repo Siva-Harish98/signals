@@ -1,0 +1,12 @@
+<p>chartview works!</p>
+<button (click)="callApi()">Call Api</button>
+{{ sharedService.saveres().fact }}
+
+
+<button (click)="computedApi()">Computed Signal</button>
+
+
+
+{{sharedService._postsValue() | json}}
+
+
