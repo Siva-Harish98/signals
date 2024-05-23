@@ -1,0 +1,26 @@
+<div class="hcm-sidenav">
+    <div class="hcm-sidenav-item">
+        <ul>
+            <li>
+                <ng-template #recusiveList let-submenu>
+                    @for (item of submenu;track $index) {
+                        <a [ngClass]="{'menuactive': item.menu == selectedMenu}"  (click)="navigateMenu(item.routeUrl,item.menu)">{{item.menu}}</a>
+            
+                       @if(item.child?.length > 0){
+                        <ul>
+                            <li>
+                                <ng-container *ngTemplateOutlet="recusiveList; context:{$implicit:item.child}"></ng-container>
+                            </li>
+                            
+                           
+                        </ul>
+                        
+                       }
+                    }
+                </ng-template>
+            </li>
+            <ng-container *ngTemplateOutlet="recusiveList; context:{$implicit:sidenavdata}"></ng-container>
+        </ul>
+    </div>
+   
+</div>

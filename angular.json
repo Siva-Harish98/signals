@@ -29,9 +29,16 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
+          
+              "styles": [
+                "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+                "node_modules/primeng/resources/primeng.min.css",
+                "src/styles.scss",
+                "src/assets/pages.scss",
+                "src/assets/sidenav.scss"
+              ]
+             
+            ,
             "scripts": [],
             "server": "src/main.server.ts",
             "prerender": true,
@@ -95,7 +102,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              "src/styles.scss",
+              "src/assets/mainfile.scss"
             ],
             "scripts": []
           }

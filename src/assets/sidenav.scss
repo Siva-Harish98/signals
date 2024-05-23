@@ -1,0 +1,32 @@
+.hcm-sidenav{
+    width: 240px;
+    background-color:#0e1111;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    display: block;
+    color: white;
+    font-weight: 600;
+    .hcm-sidenav-item{
+       ul{
+        list-style: none;
+        padding: 17px;
+        margin: 0;
+       li{
+          cursor: pointer;
+         a{
+                display: flex;
+                padding-bottom: 15px;
+                &.menuactive{
+                    background-color: #ffffff;
+                    color: black;
+                    font-weight: 600;
+                    padding: 10px;
+                    margin-bottom: 17px;
+                                }
+            }
+            
+        }
+      }  
+    }
+}

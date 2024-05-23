@@ -1,18 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import AnalyticsObjectComponent from './analytics-object.component';
 
-import { ChildcompComponent } from './childcomp.component';
 
-describe('ChildcompComponent', () => {
-  let component: ChildcompComponent;
-  let fixture: ComponentFixture<ChildcompComponent>;
+
+describe('AnalyticsObjectComponent', () => {
+  let component: AnalyticsObjectComponent;
+  let fixture: ComponentFixture<AnalyticsObjectComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ChildcompComponent]
+      imports: [AnalyticsObjectComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(ChildcompComponent);
+    fixture = TestBed.createComponent(AnalyticsObjectComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

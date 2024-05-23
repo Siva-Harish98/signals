@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ChartviewComponent } from '../chartview.component';
+import { SidenavComponent } from './sidenav.component';
 
-describe('ChartviewComponent', () => {
-  let component: ChartviewComponent;
-  let fixture: ComponentFixture<ChartviewComponent>;
+describe('SidenavComponent', () => {
+  let component: SidenavComponent;
+  let fixture: ComponentFixture<SidenavComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ChartviewComponent]
+      imports: [SidenavComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(ChartviewComponent);
+    fixture = TestBed.createComponent(SidenavComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
